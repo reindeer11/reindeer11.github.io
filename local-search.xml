@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/11/26/conda%E5%AE%89%E8%A3%85manim/"/>
+    <url>/2024/11/26/conda%E5%AE%89%E8%A3%85manim/</url>
+    
+    <content type="html"><![CDATA[<hr><h2 id="title-conda安装manim"><a href="#title-conda安装manim" class="headerlink" title="title:conda安装manim"></a>title:conda安装manim</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># using conda or mamba</span><br>conda create -n my-manim-environment<br>conda activate my-manim-environment<br>conda install -c conda-forge manim<br><span class="hljs-comment"># using pixi</span><br>pixi init<br>pixi add manim<br></code></pre></td></tr></table></figure><p>(可选)在使用 Manim 的界面来 LaTeX 渲染方程时，例如，需要安装 LaTeX。</p><hr><p>以上内容引用自:</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>创建个性化模型</title>
     <link href="/2024/11/23/%E5%88%9B%E5%BB%BA%E4%B8%AA%E6%80%A7%E5%8C%96%E6%A8%A1%E5%9E%8B/"/>
     <url>/2024/11/23/%E5%88%9B%E5%BB%BA%E4%B8%AA%E6%80%A7%E5%8C%96%E6%A8%A1%E5%9E%8B/</url>
