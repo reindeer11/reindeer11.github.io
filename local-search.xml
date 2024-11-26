@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title></title>
+    <title>conda安装manim</title>
     <link href="/2024/11/26/conda%E5%AE%89%E8%A3%85manim/"/>
     <url>/2024/11/26/conda%E5%AE%89%E8%A3%85manim/</url>
     
-    <content type="html"><![CDATA[<hr><h2 id="title-conda安装manim"><a href="#title-conda安装manim" class="headerlink" title="title:conda安装manim"></a>title:conda安装manim</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># using conda or mamba</span><br>conda create -n my-manim-environment<br>conda activate my-manim-environment<br>conda install -c conda-forge manim<br><span class="hljs-comment"># using pixi</span><br>pixi init<br>pixi add manim<br></code></pre></td></tr></table></figure><p>(可选)在使用 Manim 的界面来 LaTeX 渲染方程时，例如，需要安装 LaTeX。</p><hr><p>以上内容引用自:</p>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># using conda or mamba</span><br><br>conda create -n my-manim-environment<br>conda activate my-manim-environment<br>conda install -c conda-forge manim<br><span class="hljs-comment">#install pixi</span><br>iwr -useb https://pixi.sh/install.ps1 | iex<br><span class="hljs-comment"># using pixi</span><br><br>pixi init<br>pixi add manim<br></code></pre></td></tr></table></figure><p>(可选)在使用 Manim 的界面来 LaTeX 渲染方程时，例如，需要安装 LaTeX。</p><hr><p>以上内容引用自:</p>]]></content>
     
     
     
