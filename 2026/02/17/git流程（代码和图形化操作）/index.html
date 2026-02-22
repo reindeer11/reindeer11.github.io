@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="appearance-auto" lang="zh-CN"><head><meta charset="UTF-8"><title>git操作流程（代码和图形化操作）</title><meta name="description" content="专注于AI安全、Web安全研究，小白萌新"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!DOCTYPE html><html class="appearance-auto" lang="zh-CN"><head><meta charset="UTF-8"><title>git操作流程（代码和图形化操作）</title><meta name="description" content="困顿之时，静心沉思，答案自会悄然浮现。专注于AI安全、Web安全研究，小白萌新"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
 <!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><link rel="stylesheet" href="/style/common/jquery.fancybox.min.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="本文将全面解析 Git 的基本操作，从代码层面的详细解析到图形化工具的使用方法，涵盖项目从本地开发到 GitHub 远程仓库的完整推送流程。内容结合实际开发场景，完整展现一个标准开发周期中 Git 的使用规范与操作流程，帮助开发者建立规范的版本控制意识。文中分享的经验技巧均基于个人实践，仅代表个人见解，仅供参考，欢迎交流探讨。
 
 
@@ -14,13 +14,13 @@
 <h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 基本操作</span></span><br><span class="line">git init</span><br><span class="line">git config user.name <span class="string">&quot;名字&quot;</span>        <span class="comment"># 设置用户名</span></span><br><span class="line">git config user.email <span class="string">&quot;邮箱&quot;</span>       <span class="comment"># 设置邮箱</span></span><br><span class="line">git status <span class="comment">#查看当前状态</span></span><br><span class="line">git remote add origin git@github.com:xxx/你的项目名.git# 添加SSH方式的远程仓库</span><br><span class="line">git remote set-url origin git@github.com:reindeer11/你的项目名.git# 或者修改现有的远程仓库为SSH</span><br><span class="line">git remote -v <span class="comment">#查看远程仓库</span></span><br><span class="line">git checkout -b 新分支名 <span class="comment">#创建分支并切换</span></span><br><span class="line">git push -u origin main# 首次推送,这其实设置了上游分支也就是main 完整语法git push -u origin 本地分支：远程分支后续可以直接git push</span><br><span class="line">git add .                         <span class="comment"># 添加到暂存区</span></span><br><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span>           <span class="comment"># 提交</span></span><br><span class="line">git branch <span class="comment">#查看当前分支状态</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">git@github.com</a>:xxx&#x2F;你的项目名.git# 添加 SSH 方式的远程仓库</li>
+<li>git remote add origin <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#109;">git@github.com</a>:xxx&#x2F;你的项目名.git# 添加 SSH 方式的远程仓库</li>
 </ul>
 <p>（1）会返回俩个值</p>
-<p>origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#109;">git@github.com</a>:reindeer11&#x2F;testdemo.git (fetch) 这个是指的是从哪来 clone 代码</p>
-<p>origin <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">git@github.com</a>:reindeer11&#x2F;testdemo.git (push)这个是 push 代码到哪</p>
-<p>如何修改？什么时候要修改？</p>
-<p>公司内部开发、开源项目贡献</p>
+<p>origin <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">git@github.com</a>:reindeer11&#x2F;testdemo.git (fetch) 这个是指的是从哪来 clone 代码</p>
+<p>origin <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">git@github.com</a>:reindeer11&#x2F;testdemo.git (push)这个是 push 代码到哪</p>
+<p>如何修改？什么时候要修改？<br></p>
+<p>公司内部开发、开源项目贡献<br></p>
 <p>设置 fetch<br></p>
 <p><code>git remote set-url origin git@github.com:用户名/项目.git</code></p>
 <p>设置 push（不同的地址）<br></p>
